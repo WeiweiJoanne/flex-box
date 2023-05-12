@@ -52,6 +52,14 @@ table {
   border-spacing: 0;
 }
 
+h2, h3, p {
+  line-height: 1.5;
+}
+
+.font-weight {
+  font-weight: bold;
+}
+
 .flex {
   display: flex;
 }
