@@ -52,8 +52,18 @@ table {
   border-spacing: 0;
 }
 
-h2, h3, p {
+h3 {
+  font-size: 20px;
+}
+
+h2,
+h3,
+p {
   line-height: 1.5;
+}
+
+.color-green {
+  color: #39483C;
 }
 
 .font-weight {
@@ -68,31 +78,52 @@ h2, h3, p {
   justify-content: space-between;
 }
 
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
 section {
   width: 1024px;
-  margin: 0 auto;
-  background-color: #39483C;
+  margin: 12px auto;
+  background-color: #fff;
 }
 section .flex .flex-box {
-  width: 30%;
-  margin: 0 auto;
-  background: #fff;
+  width: 48%;
+  height: 60vh;
+  margin: 0 1%;
+  padding: 20px 40px;
+  border-radius: 12px;
+  background: #EAF0ED;
 }
-section .flex .flex-box h2 {
-  background-color: #EAF0ED;
-  color: #39483C;
-  width: 100%;
-  height: 120px;
-  line-height: 120px;
-  text-align: center;
+section .flex .flex-box:last-child {
+  flex-flow: column wrap;
 }
 section .flex .flex-box h3 {
   color: #39483C;
   font-weight: bold;
-  margin: 12px auto;
-  padding: 0 12px;
+  padding: 0;
+  text-align: left;
 }
 section .flex .flex-box p {
-  padding: 0 12px;
   margin: 12px auto 36px;
-}/*# sourceMappingURL=1.css.map */
+}
+section .flex .flex-box p:last-child {
+  position: relative;
+  padding-left: 25px;
+  margin: 0;
+}
+section .flex .flex-box p:last-child::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: #39483C;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}/*# sourceMappingURL=flex.css.map */

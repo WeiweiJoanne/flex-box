@@ -4,6 +4,7 @@
 $green: #39483C;
 $grey: #EAF0ED;
 $white: #fff;
+
 section {
     width: 1024px;
     margin: 0 auto;
@@ -11,9 +12,9 @@ section {
 
     .flex {
         .flex-box {
-width: 30%;
-margin: 0 auto;
-background: $white;
+            width: 30%;
+            margin: 0 auto;
+            background: $white;
 
             h2 {
                 background-color: $grey;
@@ -23,15 +24,17 @@ background: $white;
                 line-height: 120px;
                 text-align: center;
             }
-            h3{
-                color:$green;
+
+            h3 {
+                color: $green;
                 font-weight: bold;
                 margin: 12px auto;
                 padding: 0 12px;
             }
-            p{
-            padding: 0 12px;
-            margin: 12px auto 36px;
+
+            p {
+                padding: 0 12px;
+                margin: 12px auto 36px;
             }
         }
     }

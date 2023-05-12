@@ -1,0 +1,54 @@
+@import '../reset.scss';
+@import '../common.scss';
+
+
+section {
+    width: 1024px;
+    margin: 12px auto;
+    background-color: $white;
+
+    .flex {
+        .flex-box {
+            width: 48%;
+            height: 60vh;
+            margin: 0 1%;
+            padding: 20px 40px ;
+            border-radius: 12px;
+            background: $grey;
+            &:last-child {
+                flex-flow: column wrap;
+
+            }
+
+            h3 {
+                color: $green;
+                font-weight: bold;
+                padding: 0;
+                text-align: left;
+            }
+
+            p {
+                margin: 12px auto 36px;
+
+                &:last-child {
+                    position: relative;
+                    padding-left: 25px;
+                    margin: 0 ;
+                    // text-indent: 20px;
+
+                    &::before {
+                        content: '';
+                        width: 20px;
+                        height: 2px;
+                        background-color: $green;
+                        display: inline-block;
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+}
