@@ -1,0 +1,45 @@
+@import '../reset.scss';
+@import '../common.scss';
+
+$green: #39483C;
+$grey: #EAF0ED;
+$white: #fff;
+
+section {
+    width: 1024px;
+    margin: 0 auto;
+
+    .flex {
+        .flex-box {
+            padding: 60px 24px;
+
+            margin: 0 auto;
+            background: $white;
+
+            &#side-bar {
+                flex-flow: column wrap;
+                background-color: #eaf0ed;
+
+                ul {
+                    li {
+                        text-align: center;
+                        color: $green;
+                        margin: 12px auto;
+                    }
+                }
+            }
+
+            &#content {
+                padding: 60px 45px;
+
+                h3 {
+                    color: $green
+                }
+
+                p {
+                    margin: 12px auto 32px;
+                }
+            }
+        }
+    }
+}

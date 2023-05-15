@@ -104,42 +104,28 @@ p, li {
 
 section {
   width: 1024px;
-  margin: 12px auto;
-  background-color: #fff;
+  margin: 0 auto;
 }
 section .flex .flex-box {
-  width: 48%;
-  height: 60vh;
-  margin: 0 1%;
-  padding: 20px 40px;
-  border-radius: 12px;
-  background: #EAF0ED;
+  padding: 60px 24px;
+  margin: 0 auto;
+  background: #fff;
 }
-section .flex .flex-box:last-child {
+section .flex .flex-box#side-bar {
   flex-flow: column wrap;
+  background-color: #eaf0ed;
 }
-section .flex .flex-box h3 {
+section .flex .flex-box#side-bar ul li {
+  text-align: center;
   color: #39483C;
-  font-weight: bold;
-  padding: 0;
-  text-align: left;
+  margin: 12px auto;
 }
-section .flex .flex-box p {
-  margin: 12px auto 36px;
+section .flex .flex-box#content {
+  padding: 60px 45px;
 }
-section .flex .flex-box p:last-child {
-  position: relative;
-  padding-left: 25px;
-  margin: 0;
+section .flex .flex-box#content h3 {
+  color: #39483C;
 }
-section .flex .flex-box p:last-child::before {
-  content: "";
-  width: 20px;
-  height: 2px;
-  background-color: #39483C;
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
+section .flex .flex-box#content p {
+  margin: 12px auto 32px;
 }/*# sourceMappingURL=flex.css.map */

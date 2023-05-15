@@ -2,18 +2,27 @@ $green: #39483C;
 $grey: #EAF0ED;
 $white: #fff;
 
+h2{
+    font-size: 26px;
+}
 h3{
     font-size: 20px;
 }
 
 h2,
 h3,
-p {
+p,li {
     line-height: 1.5;
 }
 
 .color-green {
     color: $green
+}
+.color-white {
+    color: $white
+}
+.color-black {
+    color: #000
 }
 
 .font-weight {
@@ -22,6 +31,9 @@ p {
 
 .flex {
     display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
 }
 
 .justify-content-space-between {
